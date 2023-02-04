@@ -8,6 +8,9 @@
 \newcommand{\etal}{\emph{et al.}}
 \newcommand{\summary}[1]{\noindent\textbf{#1}}
 
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,fill,inner sep=1pt] (char) {\textcolor{white}{#1}};}}
+
 \newenvironment{tightitemize}%
  {\begin{list}{$\bullet$}{%
  		\setlength{\leftmargin}{10pt}
