@@ -9,7 +9,7 @@ pdf:
 	pdflatex-dev ${filename}
 	while ( grep -q '^LaTeX Warning: Label(s) may have changed' ${filename}.log) \
 	  do pdflatex-dev ${filename}; done
-	ps2pdf -dPDFSETTINGS=/default ${filename}.pdf ${filename}_font_embedded.pdf
+	ps2pdf -dColorConversionStrategy=/LeaveColorUnchanged -dPDFSETTINGS=/default ${filename}.pdf ${filename}_font_embedded.pdf
 
 clean:
 	$(RM)  *.log *.aux \
