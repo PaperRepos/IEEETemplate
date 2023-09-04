@@ -23,7 +23,8 @@ clean:
 	*.cfg *.glo *.idx *.toc \
 	*.ilg *.ind *.out *.lof \
 	*.lot *.bbl *.blg *.gls *.cut *.hd \
-	*.dvi *.ps *.thm *.tgz *.zip *.rpi *.pdf
+	*.dvi *.ps *.thm *.tgz *.zip *.rpi *.pdf \
+	*.fls *.fdb_latexmk *.synctex.gz
 
 spell:
 	$(RM) $(SPELLCHECK_OUT)
